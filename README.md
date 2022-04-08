@@ -13,7 +13,6 @@ const repeatAudio = (soundEffect, repeats, interval = 0) => {
     let duration = (soundEffect.duration * 1000);
 
     setTimeout(() => {
-
       soundEffect.currentTime = 0;
       soundEffect.play();
     }, (i * (duration + interval)));
@@ -25,11 +24,11 @@ ______
 
 ## Invoking the `repeatAudio()` function
 
-**Without an interval:**
+### Without an interval:
     repeatAudio(letterReveal, 5);
 
-**With an interval:**
+### With an interval:
     repeatAudio(letterReveal, 5, 500);
 
-**With a negative interval:**
+### With a negative interval:
     repeatAudio(letterReveal, 5, -60);
