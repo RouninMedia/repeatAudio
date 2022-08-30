@@ -37,7 +37,7 @@ ______
 ______
 
 ## Alternative approach
-**N.B.** No interval enabled, but the *playback* here is more reliable
+**N.B.** In this approach no interval is possible. But the *playback* is more reliable.
 
 ```
 const tyrannosaurusRoar = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
