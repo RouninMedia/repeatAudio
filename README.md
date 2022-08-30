@@ -32,3 +32,24 @@ ______
 
 ### With a negative interval:
     repeatAudio(letterReveal, 5, -60);
+    
+    
+______
+
+## Alternative approach (no *interval* enabled, but in all other respects much more reliable)
+
+```
+const tyrannosaurusRoar = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+
+/** N.B. This line:
+  
+    setTimeout(() => console.log(tyrannosaurusRoar.duration), 1000);
+  
+    tells us that the sound file duration is 2.142 seconds **/
+
+const tyrannosaurusRoarDuration = 2142;
+tyrannosaurusRoar.loop = true;
+setTimeout(() => tyrannosaurusRoar.loop = false, (tyrannosaurusRoarDuration * 3));
+tyrannosaurusRoar.play();
+```
+
