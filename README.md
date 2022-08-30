@@ -36,7 +36,7 @@ ______
     
 ______
 
-## Alternative approach (no *interval* enabled, but in all other respects much more reliable)
+## Alternative approach (no *interval* enabled, but *playback* is more reliable)
 
 ```
 const tyrannosaurusRoar = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
